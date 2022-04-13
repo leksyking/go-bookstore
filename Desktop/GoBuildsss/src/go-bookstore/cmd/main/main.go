@@ -14,6 +14,6 @@ func main() {
 	r := mux.NewRouter()
 	routes.RegisterBookStoreRoutes(r)
 	http.Handle("/", r)
-	fmt.Println("Server started on port 5000...")
+	fmt.Println("Server started on port 9010...")
 	log.Fatal(http.ListenAndServe("localhost:9010", r))
 }

@@ -12,10 +12,11 @@ var (
 )
 
 func Connect() {
-	d, err := gorm.Open("mysql", "Leksyking:ogundipe134@/bookStoreDB?charset=utf8&parseTime=True&loc=Local")
+	d, err := gorm.Open("mysql", "root:leksyking7@/bookStoredb?charset=utf8&parseTime=True&loc=Local")
 	if err != nil {
-		fmt.Println("connection error")
+		fmt.Println("Error ti poju")
 		panic(err)
+		fmt.Println("Error ti poju")
 	}
 	db = d
 }
