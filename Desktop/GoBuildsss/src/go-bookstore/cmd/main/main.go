@@ -15,5 +15,5 @@ func main() {
 	routes.RegisterBookStoreRoutes(r)
 	http.Handle("/", r)
 	fmt.Println("Server started on port 5000...")
-	log.Fatal(http.ListenAndServe("localhost:5000", r))
+	log.Fatal(http.ListenAndServe("localhost:9010", r))
 }
